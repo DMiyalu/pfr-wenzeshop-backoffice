@@ -1,10 +1,11 @@
 import * as React from 'react'
+import Header from '../../header'
 
 
 const Utilisateur = () => {
     return (
         <div>
-            <h2>Utilisateur</h2>
+            <Header title="Utilisateur"/>
         </div>
     )
 }

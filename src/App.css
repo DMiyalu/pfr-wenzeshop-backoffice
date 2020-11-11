@@ -22,8 +22,13 @@ nav ul a {
   color: rgba(230, 230, 230, 0.9);
   text-decoration: none;
   margin: 0;
+  transition: color 0.5ms;
 }
 
+nav ul a:hover {
+  color: white;
+  
+}
 nav ul li {
   margin: 0;
   display: flex;
@@ -33,6 +38,8 @@ nav ul li {
   margin: 10px;
   color: rgba(230, 230, 230, 0.4);
 }
+
+nav ul li:hover {}
 
 h1 {
   font-size: 18px;
