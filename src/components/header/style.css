@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+    margin: 0;
+    padding: 0 15px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 20px;
+    color: #282c34;
+    margin: 0;
+}
+
+.search-bar {
+    width: 62%;
+    margin-left: 10%;
+}
+
+.ui {
+    width: 100%;
+}
+.help {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    border: 1px solid rgba(196, 196, 196, 0.3);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compte {
+    background-color: #7A77FF;
+    height: 35px;
+    width: 35px;
+    border: 1px solid rgba(196, 196, 196, 0.3);
+    border-radius: 25px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+}

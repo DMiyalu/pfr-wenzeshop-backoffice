@@ -13,7 +13,6 @@ import Utilisateur from './components/screens/utilisateur'
 import Statistique from './components/screens/statistique'
 import Equipe from './components/screens/equipe'
 import Carnet from './components/screens/carnet'
-import Home from './components/screens/home'
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,7 +28,11 @@ const App = () =>{
       <div className="App-header">
         <div className="menu">
           <div className="title">
-            <BsCircleFill size={10} color="green" /><h1>Wenzeshop</h1><AiOutlineMenuFold size={20} className="menu-icon"/>
+            <BsCircleFill size={10} color="green" />
+            <h1>
+            Wenzeshop
+            </h1>
+            <AiOutlineMenuFold size={20} className="menu-icon"/>
           </div>
           <nav>
             <ul>
@@ -61,9 +64,6 @@ const App = () =>{
         </div>
         <div>
           <Switch>
-            <Route path="/">
-              <Home />
-            </Route>
             <Route path="/commande">
               <Commande />
             </Route>
