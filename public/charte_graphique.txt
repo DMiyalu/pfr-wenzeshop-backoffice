@@ -1,0 +1,9 @@
+Global:
+Gris_Principal = 'rgb(40,44,52)' || '#282c34'
+Gris_Secondaire = ''
+
+Grand_titre:
+Blanc_principal = ''
+Blanc_secondaire = ''
+
+BarStyle = '#C4C4C4'
