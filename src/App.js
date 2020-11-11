@@ -6,12 +6,21 @@ import { MdLocalGroceryStore } from 'react-icons/md'
 import { IoMdNotifications } from 'react-icons/io'
 import { SiMarketo } from 'react-icons/si'
 import { ImUsers } from 'react-icons/im'
+import Commande from './components/screens/commande'
+import Notification from './components/screens/notification'
+import Magasin from './components/screens/magasin'
+import Utilisateur from './components/screens/utilisateur'
+import Statistique from './components/screens/statistique'
+import Equipe from './components/screens/equipe'
+import Carnet from './components/screens/carnet'
+import Home from './components/screens/home'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+
 
 
 const App = () =>{
@@ -25,26 +34,26 @@ const App = () =>{
           <nav>
             <ul>
               <li>
-                <MdLocalGroceryStore /><Link to="/">Commandes</Link>
+                <MdLocalGroceryStore /><Link to="/commande">Commandes</Link>
               </li>
               <li>
-                <IoMdNotifications /><Link to="/about">Notifications</Link>
+                <IoMdNotifications /><Link to="/notification">Notifications</Link>
               </li>
               <li>
-                <SiMarketo /><Link to="/users">Magasin</Link>
+                <SiMarketo /><Link to="/magasin">Magasin</Link>
               </li>
               <li>
-                <ImUsers /><Link to="/users">Livreurs</Link>
+                <ImUsers /><Link to="/utilisateur">Livreurs</Link>
               </li>
               <li>
-              <ImUsers /><Link to="/users">Clients</Link>
+              <ImUsers /><Link to="/utilisateur">Clients</Link>
               </li>
             </ul>
           </nav>
           <nav className="nav-bottom">
-                <Link to="/">Statistiques</Link>
-                <Link to="/about">Equipe</Link>           
-                <Link to="/users">Carnet</Link> 
+                <Link to="/statistique">Statistiques</Link>
+                <Link to="/equipe">Equipe</Link>           
+                <Link to="/carnet">Carnet</Link> 
           </nav>
           <div className="button-help">
             <Link to="/">help</Link>
@@ -52,32 +61,35 @@ const App = () =>{
         </div>
         <div>
           <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/users">
-              <Users />
-            </Route>
             <Route path="/">
               <Home />
+            </Route>
+            <Route path="/commande">
+              <Commande />
+            </Route>
+            <Route path="/notification">
+              <Notification />
+            </Route>
+            <Route path="/magasin">
+              <Magasin />
+            </Route>
+            <Route path="/utilisateur">
+              <Utilisateur />
+            </Route>
+            <Route path="/statistique">
+              <Statistique />
+            </Route>
+            <Route path="/equipe">
+              <Equipe />
+            </Route>
+            <Route path="/carnet">
+              <Carnet />
             </Route>
           </Switch>
         </div>
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
 
 
